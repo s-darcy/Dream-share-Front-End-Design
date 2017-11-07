@@ -1,0 +1,21 @@
+.button {
+	background-color: $color-sunset-orange;
+	border: 2px solid $color-sunset-orange;
+    border-radius: 999px;
+    height: 40px;
+    line-height: 36px;
+    padding-top: 0;
+    padding-bottom: 0;
+    font-size: 14px;
+    font-family: $font-secondary;
+
+	&.secondary {
+		background-color: transparent;
+		border-color: white;
+	}
+
+    &.info {
+    	background-color: transparent;
+    	border-color: transparent;
+    }
+}

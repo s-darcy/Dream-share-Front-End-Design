@@ -1,0 +1,46 @@
+.header {
+	position: absolute;
+	width:100%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	color: white;
+
+	> .row > .columns:first-child {
+		display: none;
+	}
+
+	&__nav {
+
+		> ul {
+		    display: inline-block;
+		    position: relative;
+		    left: 50%;
+		    transform: translateX(-50%);
+		    margin-bottom: 0;
+
+		    .button {
+		    	margin-bottom: 0;
+		    	color: white;
+		    }
+		}
+
+	}
+
+	@media( min-width: 642px ) {
+
+		> .row > .columns:first-child {
+			display: block;
+		}
+
+		&__nav {
+
+			> ul {
+				left: auto;
+				transform: none;
+				float: right;
+			}
+		}
+
+	}
+
+}
